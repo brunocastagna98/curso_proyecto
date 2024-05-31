@@ -1,0 +1,174 @@
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgb(24, 20, 25); /* fondo de la barra  */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(159, 54, 71); /* manija */
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white; /* Ajusta el color de fondo según sea necesario */
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(24, 20, 25);
+    
+}
+
+.logo {
+    margin-left: 40px;
+}
+
+.encabezado {
+    font-size: 17.2px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 65px;
+    background-color: rgb(159, 54, 71);
+    
+}
+
+ul.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin-right: 80px;
+
+}
+
+ul.nav-links li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.iniciar-sesion {
+    background-color: rgb(0, 0, 0);
+    padding: 11px;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.principal {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("imagenes/fondodetail.png");
+    background-position: center;
+    height: 93vh;
+}
+
+.contenedor-detalle {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.portada {
+    padding: 80;
+    margin-top: 150px;
+    padding: 20px;
+    margin-right: 70px;
+    width: 340px;
+    height: 500px;
+    border-radius: 30px;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.descripcion {
+    color: white; /* Color de texto blanco */
+    max-width: 50%; /* Ajusta el ancho del texto según necesites */
+}
+
+.descripcion h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.descripcion h2{
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.contenedor-trailer{
+    margin-right: 100px;
+}
+
+
+/* Estilos para el pie de página */
+
+
+.mi-footer a {
+    color: white !important;
+    text-decoration: none !important;
+    padding: 20px;
+}
+
+
+#titlemovie{
+    color: white;
+}
+
+.pelicula{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#conte-trailer {
+    display: flex;
+    position: relative;
+    z-index: 1; /* Asegúrate de que el trailer esté en un nivel z por encima del footer */
+    padding: 20px; /* Agrega un espacio entre el contenido del trailer y los bordes del contenedor */
+}
+
+#conte-trailer iframe {
+    margin: 0; /* Asegúrate de que no haya márgenes en el interior del contenido del trailer */
+    width: 500px; /* Asegúrate de que el contenido del trailer ocupe todo el ancho disponible */
+    height: 200px; /* Permite que la altura del contenido del trailer se ajuste automáticamente */
+}
+
+.mi-footer {
+    background-color: rgb(159, 54, 71);
+    color: white !important;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none !important;
+/* Asegúrate de que el footer esté en un nivel z por encima del trailer */
+}
+
+
+

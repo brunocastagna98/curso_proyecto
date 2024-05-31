@@ -1,0 +1,349 @@
+/* Estilos para la barra de desplazamiento vertical */
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgb(24, 20, 25); /* fondo de la barra  */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(159, 54, 71); /* manija */
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    
+}
+
+body {
+    background-color: rgb(24, 20, 25);
+    
+}
+
+.logo {
+    margin-left: 40px;
+}
+
+.encabezado {
+    font-size: 17.2px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 65px;
+    background-color: rgb(159, 54, 71);
+    
+}
+
+ul.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin-right: 80px;
+
+}
+
+ul.nav-links li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.iniciar-sesion {
+    background-color: rgb(0, 0, 0);
+    padding: 11px;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("imagenes/fondo.png");
+    background-size: cover; 
+    background-position: center;
+    height: 93vh;
+}
+
+.main-title {
+    padding-top: 50px;
+    padding-bottom: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.sub-title {
+    color: white;
+    text-align: center;
+    font-size: 32.2px;
+    font-weight: 400;
+}
+
+.btn-register {
+    background-color: rgb(159, 54, 71);
+    color: white;
+    font-size: 19.2px;
+    padding: 15px 25px; 
+    border-radius: 7px;
+    display: inline-block;
+    margin-top: 20px; 
+    font-weight: 400; 
+}
+
+.search {
+    padding-top: 150px;
+    color: white;
+    font-size: 1.6rem;;
+    text-align: center;
+}
+
+.search-input{
+    margin-top: 50px;
+    border-radius: 100px;
+    font-size: 1.4rem;
+    padding : 10px 40px;
+    width: 500px;
+    border: 1px solid white;
+    outline: none;
+}
+
+
+.search-btn {
+    margin-top: 50px;
+    border-radius: 100px;
+    font-size: 1.2rem;
+    padding : 10px 15px;
+    width: auto;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgb(159, 54, 71);
+    color: white;
+    text-align: left;
+    border-width: 2px;
+}
+
+
+.search-input::placeholder {
+    font-weight: 400; 
+    font-size: 1.3rem;
+}
+
+.hr-busqueda{
+    border: 1px solid rgb(159, 54, 71);
+    width: 80%;
+    margin-top: 250px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+}
+
+
+.hr-aclamadas{
+    border: 1px solid rgb(159, 54, 71);
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+}
+
+
+
+
+.contenedor-botones {
+    text-align: center; 
+}
+
+.btn-siguiente {
+    background-color: rgb(159, 54, 71);
+    color: white;
+    font-size: 15.2px;
+    padding: 15px 25px; 
+    border-radius: 7px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+
+
+
+
+.trend-title {
+    color: white;
+    text-align: center;
+    font-size: 32.2px;
+    font-size: 40px;
+}
+
+/* PARTE DE LAS PELICULASSSS */
+
+
+
+
+
+
+.trend-title {
+    margin-bottom: 40px; /* Ajusta el margen inferior para separar el título de las películas */
+}
+
+.row{
+    justify-content: center;
+}
+
+
+
+/* Estilos para la sección de peliculas */
+
+.movie {
+    background-image: url(imagenes/peli1.png);
+    width: 200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover; 
+    background-position: center;
+    border-radius: 19px;
+    margin-top: 30px;
+
+}
+
+.movieaclamada {
+    background-image: url(imagenes/peli1.png);
+    width: 150px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover; 
+    background-position: center;
+    border-radius: 19px;
+
+}
+
+#movie-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#moviesGrid {
+    width: 70vw;
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-bottom: 100px;
+}
+
+
+/* Estilos para la barra de desplazamiento */
+.movie-section {
+    width: 60%;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+.movie-container {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.movie {
+    width: 200px;
+    height: 300px;
+    background-color: red;
+    margin-right: 10px;
+}
+
+
+/* Estilos para la barra de desplazamiento personalizada */
+/* Estilos para la barra de desplazamiento personalizada */
+.movie-section::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgb(24, 20, 25); /* Color de fondo de la barra de desplazamiento */
+}
+
+.movie-section::-webkit-scrollbar-thumb {
+    background-color: rgb(159, 54, 71); /* Color de la manija de desplazamiento */
+    
+}
+
+
+
+#contenedorpeli {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el pie de página */
+.mi-footer {
+    background-color: rgb(159, 54, 71);
+    color: white !important;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none !important;
+}
+
+.mi-footer a {
+    color: white !important;
+    text-decoration: none !important;
+    padding: 20px;
+}
+
+
+#titlemovie{
+    color: white;
+}
+
+.pelicula{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#conte-trailer {
+    padding: 20px;
+}
+
